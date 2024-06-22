@@ -1,12 +1,11 @@
-
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Destinations from './pages/Destinations';
 import Booking from './pages/Booking';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
-import './style.css';
+import './App.css';  // Only import App.css now
 
 function App() {
     return (
@@ -40,14 +39,14 @@ function App() {
                 <div className="separator"></div>
                 
                 <main>
-                    <Switch>
-                        <Route path="/home" component={Home} />
-                        <Route path="/destinations" component={Destinations} />
-                        <Route path="/booking" component={Booking} />
-                        <Route path="/contact" component={Contact} />
-                        <Route path="/login" component={Login} />
-                        <Route path="/" exact component={Home} />
-                    </Switch>
+                    <Routes>
+                        <Route path="/home" element={<Home />} />
+                        <Route path="/destinations" element={<Destinations />} />
+                        <Route path="/booking" element={<Booking />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="/" element={<Home />} />
+                    </Routes>
                 </main>
                 
                 <footer>
