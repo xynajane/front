@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './style.css'; 
+import '../app.css';
 
 function Destination() {
   return (
@@ -49,4 +49,4 @@ function Destination() {
   );
 }
 
-export default Contact;
+export default Destination;

@@ -5,7 +5,7 @@ import Destinations from './pages/Destinations';
 import Booking from './pages/Booking';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
-import './App.css';  // Only import App.css now
+import './app.css';
 
 function App() {
     return (

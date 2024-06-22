@@ -57,7 +57,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('/img/login.png');
+  background-image: url('../public/img/login.png');
   background-size: cover;
   background-position: center;
 }
@@ -388,3 +388,4 @@ footer {
 .login-form .options a:hover {
   color: #166fe5;
 }
+

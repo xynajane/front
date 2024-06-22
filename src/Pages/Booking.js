@@ -1,6 +1,6 @@
 // src/pages/Booking.js
 import React, { useState } from 'react';
-import './style.css';
+import '../app.css';
 
 function Booking() {
   const [selectedSpot, setSelectedSpot] = useState(null);
